@@ -58,6 +58,11 @@ body {
   --b7-txt-background-color: #fa684f;
 
   /* Block-8 */
+  --b8-background-color: #8f76bc;
+  --b8-radius-fill-color: #8166b0;
+  --b8-txt-color: #fff;
+  --b8-btn-background-color: #ffc80a;
+  --b8-btn-color: #000;
 
   /* Block-9 */
   --b9-txt-background-color: #7bc424;
@@ -78,7 +83,6 @@ a {
 }
 
 .container {
-  /* height: 100vh; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto 1fr auto auto 1fr 1fr auto auto;
@@ -97,9 +101,10 @@ a {
 }
 
 .container > div {
-  border: 1px solid #09c;
   overflow: hidden;
 }
+
+
 
 /* 
 ======================================================
@@ -200,6 +205,7 @@ a {
                     Start Block-3
 ======================================================
 */
+
 .block-3 {
   grid-area: block-3;
   background-color: var(--b3-background-color);
@@ -405,7 +411,6 @@ a {
 .block-6 .contain h3 {
   font-size: 22px;
   line-height: 32px;
-  /* margin: 10px 0 20px; */
   color: var(--b6-h3-color);
 }
 
@@ -477,6 +482,103 @@ a {
 
 .block-8 {
   grid-area: block-8;
+  background-color: var(--b8-background-color);
+}
+
+.block-8 .contain {
+  padding: 10%;
+}
+
+.block-8 .contain .radius {
+  background-color: var(--b8-radius-fill-color);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--b8-txt-color);
+  width: 373px;
+  height: 373px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.block-8 .contain .radius h6 {
+  font-size: 10px;
+  line-height: 23px;
+  letter-spacing: 2.4px;
+  padding: 2px 13px 1px 30px;
+  background-color: #8b72b6;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+}
+
+.block-8 .contain .radius h6::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-image: url(../images/flag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+}
+
+.block-8 .contain .radius h6 > img {
+  width: 12px;
+}
+
+.block-8 .contain .radius img {
+  width: 60%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.block-8 .contain .radius span {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.block-8 .contain .desc {
+  text-align: center;
+  /* padding: 10%; */
+  color: var(--b8-txt-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.block-8 .contain .desc h2 {
+  font-size: 32px;
+  line-height: 36px;
+  margin: 20px 0 10px;
+  font-weight: 700;
+}
+
+.block-8 .contain .desc p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.block-8 .contain .desc a {
+  font-size: 12px;
+  line-height: 26px;
+  letter-spacing: 2.4px;
+  padding: 14px 28px;
+  background-color: var(--b8-btn-background-color);
+  color: var(--b8-btn-color);
+  border-radius: 25px;
 }
 
 /* 
@@ -496,7 +598,7 @@ a {
   align-items: center;
   flex-direction: column;
   height: 100%;
-  /* background-color: red; */
+  text-align: center;
 }
 
 .block-9 .contain .txt span {
@@ -549,12 +651,9 @@ a {
   font-weight: 400;
   margin: 10px 0 20px;
   text-align: center;
-  /* background-color: #27b9c2; */
 }
 
-.block-10 .contain .main-txt h3{
+.block-10 .contain .main-txt h3 {
   margin: 0 auto;
   width: 70%;
-  /* background-color: #f05638; */
 }
-

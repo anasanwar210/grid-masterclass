@@ -21,7 +21,7 @@ body {
 
 :root {
   /* Block-1 */
-  --b1-bcg-color: #f7eff0;
+  --b1-bcg-color: #f7f8f9;
   --b1-span-color: #9fa3a7;
   --b1-paragraph-color: #333;
   --b1-link-color: #27b9c2;
@@ -145,6 +145,8 @@ a {
   font-size: 14px;
   line-height: 26px;
   text-decoration: underline;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 /* 

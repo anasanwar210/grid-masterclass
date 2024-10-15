@@ -233,6 +233,7 @@ a {
   font-size: 22px;
   line-height: 32px;
   font-weight: 700;
+  padding-bottom: 20px;
 }
 
 .block-3 .contain .content a {
@@ -275,9 +276,11 @@ a {
 
 .block-4 .contain .content p {
   color: var(--b4-paragraph-color);
+  width: 80%;
+  margin: auto;
   font-size: 22px;
   line-height: 32px;
-  margin: 10px 0;
+  padding: 20px 0;
 }
 
 .block-4 .contain .content a {
@@ -559,6 +562,9 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 80%;
+  max-width: 290px;
+  margin: auto;
 }
 
 .block-8 .contain .desc h2 {
